@@ -1,0 +1,102 @@
+3. Catalogue Page (catalogue.html)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Online Book Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .top-frame {
+            width: 100%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .catalogue-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .catalogue-table, .catalogue-table th, .catalogue-table td {
+            border: 1px solid #ddd;
+        }
+        .catalogue-table th, .catalogue-table td {
+            padding: 8px;
+            text-align: center;
+        }
+        .catalogue-table img {
+            width: 100px;
+        }
+        .top-frame nav a {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-frame">
+        <div class="logo">Online Book Store</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Registration</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <table class="catalogue-table">
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>Price</th>
+                <th>Cover</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>XML Bible</td>
+                <td>Winston</td>
+                <td>Wiley</td>
+                <td>Rs 40.5</td>
+                <td><img src="book1.jpg" alt="XML Bible"></td>
+                <td><button>Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>AI</td>
+                <td>S. Russell</td>
+                <td>Princeton Hall</td>
+                <td>Rs 63</td>
+                <td><img src="book2.jpg" alt="AI"></td>
+                <td><button>Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Java 2</td>
+                <td>Watson</td>
+                <td>BPB Publications</td>
+                <td>Rs 35.5</td>
+                <td><img src="book3.jpg" alt="Java 2"></td>
+                <td><button>Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>HTML in 24 hours</td>
+                <td>Sam Peter</td>
+                <td>Sam Publications</td>
+                <td>Rs 50</td>
+                <td><img src="book4.jpg" alt="HTML in 24 hours"></td>
+                <td><button>Add to Cart</button></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
